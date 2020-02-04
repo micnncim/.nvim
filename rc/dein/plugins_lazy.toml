@@ -1,0 +1,128 @@
+# --------------------------------------------------------------------------------
+# UI
+
+[[plugins]]
+repo        = 'Shougo/denite.nvim'
+on_cmd      = 'Denite'
+depends     = ['vim-devicons']
+hook_add    = 'source $XDG_CONFIG_HOME/nvim/rc/plugins/denite/hook_add.rc.vim'
+hook_source = 'source $XDG_CONFIG_HOME/nvim/rc/plugins/denite/hook_source.rc.vim'
+
+[[plugins]]
+repo        = 'Shougo/defx.nvim'
+on_cmd      = 'Defx'
+depends     = ['defx-icons', 'defx-git']
+hook_add    = 'source $XDG_CONFIG_HOME/nvim/rc/plugins/defx/hook_add.rc.vim'
+hook_source = 'source $XDG_CONFIG_HOME/nvim/rc/plugins/defx/hook_source.rc.vim'
+
+[[plugins]]
+repo    = 'kristijanhusak/defx-icons' 
+depends = ['vim-devicons']
+
+[[plugins]]
+repo        = 'kristijanhusak/defx-git'
+hook_source = 'source $XDG_CONFIG_HOME/nvim/rc/plugins/defx-git/hook_source.rc.vim'
+
+[[plugins]]
+repo        = 'liuchengxu/vista.vim'
+depends     = ['lightline.vim']
+on_cmd      = 'Vista'
+hook_add    = 'source $XDG_CONFIG_HOME/nvim/rc/plugins/vista/hook_add.rc.vim'
+hook_source = 'source $XDG_CONFIG_HOME/nvim/rc/plugins/vista/hook_source.rc.vim'
+
+[[plugins]]
+repo = 'ryanoasis/vim-devicons'
+
+# --------------------------------------------------------------------------------
+# Edit
+
+[[plugins]]
+repo        = 'Shougo/deoplete.nvim'
+on_event    = 'InsertEnter'
+hook_source = 'source $XDG_CONFIG_HOME/nvim/rc/plugins/deoplete/hook_source.rc.vim'
+
+[[plugins]]
+repo        = 'SirVer/ultisnips'
+on_event    = 'InsertEnter'
+hook_source = 'source $XDG_CONFIG_HOME/nvim/rc/plugins/ultisnips/hook_source.rc.vim'
+
+[[plugins]]
+repo     = 'junegunn/vim-easy-align'
+on_map   = '<Plug>(EasyAlign)'
+hook_add = 'source $XDG_CONFIG_HOME/nvim/rc/plugins/vim-easy-align/hook_add.rc.vim'
+
+# --------------------------------------------------------------------------------
+# Terminal
+
+[[plugins]]
+repo     = 'Shougo/deol.nvim'
+on_cmd   = 'Deol'
+hook_add = 'source $XDG_CONFIG_HOME/nvim/rc/plugins/deol/hook_add.rc.vim'
+
+# --------------------------------------------------------------------------------
+# Language specific
+
+[[plugins]]
+repo  = 'fatih/vim-go'
+on_ft = ['go']
+
+[[plugins]]
+repo   = 'buoto/gotests-vim'
+on_ft  = ['go']
+on_cmd = ['GoTests', 'GoTestsAll']
+
+[[plugins]]
+repo  = 'rust-lang/rust.vim'
+on_ft = ['rust']
+
+[[plugins]]
+repo  = 'cespare/vim-toml'
+on_ft = ['toml']
+
+[[plugins]]
+repo  = 'plasticboy/vim-markdown'
+on_ft = ['markdown', 'pandoc.markdown', 'rmd']
+
+[[plugins]]
+repo   = 'iamcco/markdown-preview.nvim'
+build  = 'sh -c "cd app & yarn install"'
+on_ft  = ['markdown', 'pandoc.markdown', 'rmd']
+on_cmd = ['MarkdownPreview', 'MarkdownPreviewStop']
+
+# --------------------------------------------------------------------------------
+# Git
+
+[[plugins]]
+repo   = 'lambdalisue/gina.vim'
+on_cmd = "Gina"
+
+[[plugins]]
+repo   = 'rhysd/git-messenger.vim'
+on_cmd = 'GitMessenger'
+on_map = '<Plug>(git-messenger)'
+
+# --------------------------------------------------------------------------------
+# Utility
+
+[[plugins]]
+repo        = 'junegunn/fzf.vim'
+on_cmd      = 'FZF'
+hook_add    = 'source $XDG_CONFIG_HOME/nvim/rc/plugins/fzf/hook_add.rc.vim'
+hook_source = 'source $XDG_CONFIG_HOME/nvim/rc/plugins/fzf/hook_source.rc.vim'
+
+[[plugins]]
+repo   = 'easymotion/vim-easymotion'
+on_map = ['<Plug>(easymotion-prefix)']
+
+[[plugins]]
+repo   = 'kristijanhusak/vim-carbon-now-sh'
+on_cmd = 'CarbonNowSh'
+
+[[plugins]]
+repo   = 'haya14busa/dein-command.vim'
+on_cmd = 'Dein'
+
+[[plugins]]
+repo        = 'machakann/vim-highlightedyank'
+on_event    = 'TextYankPost'
+hook_source = 'source $XDG_CONFIG_HOME/nvim/rc/plugins/vim-highlightedyank/hook_source.rc.vim'

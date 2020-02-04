@@ -1,0 +1,75 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+# --------------------------------------------------------------------------------
+# UI
+
+[[plugins]]
+repo     = 'joshdick/onedark.vim'
+hook_add = 'source $XDG_CONFIG_HOME/nvim/rc/plugins/onedark/hook_add.rc.vim'
+
+[[plugins]]
+repo       = 'itchyny/lightline.vim'
+depends_on = ['vim-devicons', 'lightline-ale', 'lightline-bufferline']
+hook_add   = 'source $XDG_CONFIG_HOME/nvim/rc/plugins/lightline/hook_add.rc.vim'
+
+[[plugins]]
+repo = 'maximbaz/lightline-ale'
+
+[[plugins]]
+repo = 'mengelbrecht/lightline-bufferline'
+
+# --------------------------------------------------------------------------------
+# Edit
+
+[[plugins]]
+repo = 'tpope/vim-commentary'
+
+[[plugins]]
+repo = 'tpope/vim-surround'
+
+[[plugins]]
+repo = 'jiangmiao/auto-pairs'
+
+[[plugins]]
+repo = 'tpope/vim-speeddating'
+
+# --------------------------------------------------------------------------------
+# Linter
+
+[[plugins]]
+repo     = 'dense-analysis/ale'
+hook_add = 'source $XDG_CONFIG_HOME/nvim/rc/plugins/ale/hook_add.rc.vim'
+
+# --------------------------------------------------------------------------------
+# Language specific
+
+[[plugins]]
+repo     = 'autozimu/LanguageClient-neovim'
+rev      = 'next'
+build    = 'bash install.sh'
+hook_add = 'source $XDG_CONFIG_HOME/nvim/rc/plugins/LanguageClient/hook_add.rc.vim'
+
+[[plugins]]
+repo = 'sheerun/vim-polyglot'
+
+# --------------------------------------------------------------------------------
+# Git
+
+[[plugins]]
+repo     = 'airblade/vim-gitgutter'
+hook_add = 'source $XDG_CONFIG_HOME/nvim/rc/plugins/vim-gitgutter/hook_add.rc.vim'
+
+# --------------------------------------------------------------------------------
+# Utility
+
+[[plugins]]
+repo = 'tpope/vim-repeat'
+
+[[plugins]]
+repo   = 'junegunn/fzf'
+build  = './install'
+merged = '0'
+
+[[plugins]]
+repo = 'wakatime/vim-wakatime'

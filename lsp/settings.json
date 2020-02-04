@@ -1,0 +1,42 @@
+{
+    "gopls": {
+        "env": {},
+        "buildFlags": [],
+        "completionDocumentation": true,
+        "usePlaceholders": true,
+        "deepCompletion": true,
+        "fuzzyMatching": true,
+        "caseSensitiveCompletion": false,
+        "completeUnimported": false,
+        "completionBudget": "200ms",
+        "hoverKind": "FullDocumentation",
+        "linkTarget": "",
+        "experimentalDisabledAnalyses": [],
+        "staticcheck": false,
+        "local": "",
+        "verboseOutput": false,
+        "tempModfile": false
+    },
+    "yaml": {
+        "completion": true,
+        "format": {
+            "bracketSpacing": true,
+            "enable": true,
+            "proseWrap": true,
+            "singleQuote": true
+        },
+        "hover": true,
+        "validate": true,
+        "schemas": {
+            "https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/circleciconfig.json": ["**/.circleci/config.yml"],
+            "https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/cloudbuild.json": ["**/*cloudbuild.yaml"],
+            "https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/codecov.json": ["**/codecov.yml"],
+            "https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/github-action.json": ["**/action.yaml", "**/action.yml"],
+            "https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/github-workflow.json": ["**/.github/**/*.yaml","**/.github/**/*.yml"],
+            "https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/kustomization.json": ["**/kustomization.yaml"],
+            "https://raw.githubusercontent.com/instrumenta/kubernetes-json-schema/master/master/all.json": ["**/kubernetes/*.yaml", "**/manifests/*.yaml"],
+            "https://raw.githubusercontent.com/zchee/jsonschema/master/docker-compose.jsonschema": ["**/*docker-compose*.yaml", "**/*docker-compose*.yml"],
+            "url": "globPattern"
+        }
+    }
+}
