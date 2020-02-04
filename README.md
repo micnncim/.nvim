@@ -7,6 +7,6 @@ Neovim config.
 ## Setup
 
 ```
-$ ln -s path/to/micnncim/.nvim $XDG_CACHE_HOME/nvim
+$ ln -s path/to/micnncim/.nvim $XDG_CONFIG_HOME/nvim
 ```
 
