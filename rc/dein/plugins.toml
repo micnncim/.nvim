@@ -60,6 +60,9 @@ repo = 'sheerun/vim-polyglot'
 repo     = 'airblade/vim-gitgutter'
 hook_add = 'source $XDG_CONFIG_HOME/nvim/rc/plugins/vim-gitgutter/hook_add.rc.vim'
 
+[[plugins]]
+repo = 'rhysd/conflict-marker.vim'
+
 # --------------------------------------------------------------------------------
 # Utility
 
