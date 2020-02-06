@@ -1,0 +1,59 @@
+snippet badge-license "badge for license"
+[![license][license-badge]][license]
+[license]: LICENSE
+[license-badge]: https://img.shields.io/github/license/${1:owner}/${2:repo}?style=for-the-badge
+endsnippet
+
+snippet badge-release "badge for github release"
+[![release][release-badge]][release]
+[release]: https://github.com/${1:owner}/${2:repo}/releases
+[release-badge]: https://img.shields.io/github/v/release/$1/$2?style=for-the-badge&logo=github
+endsnippet
+
+snippet badge-actions-workflow "badge for github actions workflow"
+[![actions-workflow-${1:Test}][actions-workflow-$1-badge]][actions-workflow-$1]
+[actions-workflow-$1]: https://github.com/${2:owner}/${3:repo}/actions?query=workflow%3A$1
+[actions-workflow-$1-badge]: https://img.shields.io/github/workflow/status/$2/$3/$1?label=$1&style=for-the-badge&logo=github
+endsnippet
+
+snippet badge-actions-marketplace "badge for github actions marketplace"
+[![actions-marketplace][actions-marketplace-badge]][actions-marketplace]
+[actions-marketplace]: https://github.com/marketplace/actions/${1:action}
+[actions-marketplace-badge]: https://img.shields.io/badge/marketplace-${2:display-name}-blue?style=for-the-badge&logo=github
+endsnippet
+
+snippet badge-codecov "badge for codecov"
+[![codecov][codecov-badge]][codecov]
+[codecov]: https://codecov.io/gh/${1:owner}/${2:repo}
+[codecov-badge]: https://img.shields.io/codecov/c/github/$1/$2?style=for-the-badge&logo=codecov
+endsnippet
+
+snippet badge-codefactor "badge for codefactor"
+[![codefactor][codefactor-badge]][codefactor]
+[codefactor]: https://www.codefactor.io/repository/github/${1:owner}/${2:repo}
+[codefactor-badge]: https://img.shields.io/codefactor/grade/github/$1/$2?logo=codefactor&style=for-the-badge
+endsnippet
+
+snippet badge-dependabot "badge for dependabot"
+[![dependabot][dependabot-badge]][dependabot]
+[dependabot]: https://dependabot.com
+[dependabot-badge]: https://img.shields.io/badge/-dependabot-blue?style=for-the-badge&logo=dependabot
+endsnippet
+
+snippet badge-docker-build "badge for docker build"
+[![docker-build][docker-build-badge]][docker-build]
+[docker-build]: https://hub.docker.com/r/${1:owner}/${2:repo}
+[docker-build-badge]: https://img.shields.io/docker/cloud/build/$1/$2?logo=docker&style=for-the-badge
+endsnippet
+
+snippet badge-pkg-go-dev "badge for pkg.go.dev"
+[![pkg.go.dev][pkg.go.dev-badge]][pkg.go.dev]
+[pkg.go.dev]: https://pkg.go.dev/github.com/${1:owner}/${2:repo}
+[pkg.go.dev-badge]: https://img.shields.io/badge/pkg.go.dev-reference-blue?style=for-the-badge&logo=go
+endsnippet
+
+snippet badge-go-version "badge for go version"
+[![go-version][go-version-badge]][go-version]
+[go-version]: go.mod
+[go-version-badge]: https://img.shields.io/github/go-mod/go-version/${1:owner}/${2:repo}?logo=go&style=for-the-badge
+endsnippet
