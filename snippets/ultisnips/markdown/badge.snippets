@@ -28,6 +28,12 @@ snippet badge-codecov "badge for codecov"
 [codecov-badge]: https://img.shields.io/codecov/c/github/$1/$2?style=for-the-badge&logo=codecov
 endsnippet
 
+snippet badge-code-climate "badge for code climate"
+[![code-climate][code-climate-badge]][code-climate]
+[code-climate]: https://codeclimate.com/github/${1:owner}/${2:repo}
+[code-climate-badge]: https://img.shields.io/codeclimate/maintainability/$1/$2?logo=code-climate&style=for-the-badge
+endsnippet
+
 snippet badge-codefactor "badge for codefactor"
 [![codefactor][codefactor-badge]][codefactor]
 [codefactor]: https://www.codefactor.io/repository/github/${1:owner}/${2:repo}
@@ -58,7 +64,7 @@ snippet badge-go-version "badge for go version"
 [go-version-badge]: https://img.shields.io/github/go-mod/go-version/${1:owner}/${2:repo}?logo=go&style=for-the-badge
 endsnippet
 
-snippet badge-license "badge for crates"
+snippet badge-crates "badge for crates"
 [![crates][crates-badge]][crates]
 [crates]: https://crates.io/crates/${1:crates}
 [crates-badge]: https://img.shields.io/crates/v/$1?logo=rust&style=for-the-badge
