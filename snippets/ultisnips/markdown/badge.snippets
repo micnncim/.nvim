@@ -36,8 +36,8 @@ endsnippet
 
 snippet badge-dependabot "badge for dependabot"
 [![dependabot][dependabot-badge]][dependabot]
-[dependabot]: https://dependabot.com
-[dependabot-badge]: https://img.shields.io/badge/-dependabot-blue?style=for-the-badge&logo=dependabot
+[dependabot]: https://github.com/${1:owner}/${2:repo}/pulls?utf8=✓&q=is%3Apr+author%3Aapp%2Fdependabot-preview
+[dependabot-badge]: https://img.shields.io/badge/dependabot-enabled-blue?style=for-the-badge&logo=dependabot
 endsnippet
 
 snippet badge-docker-build "badge for docker build"
@@ -57,3 +57,16 @@ snippet badge-go-version "badge for go version"
 [go-version]: go.mod
 [go-version-badge]: https://img.shields.io/github/go-mod/go-version/${1:owner}/${2:repo}?logo=go&style=for-the-badge
 endsnippet
+
+snippet badge-license "badge for crates"
+[![crates][crates-badge]][crates]
+[crates]: https://crates.io/crates/${1:crates}
+[crates-badge]: https://img.shields.io/crates/v/$1?logo=rust&style=for-the-badge
+endsnippet
+
+snippet badge-python-version "badge for python version"
+[![python-version][python-version-badge]][python-version]
+[python-version]: Pipfile
+[python-version-badge]: https://img.shields.io/github/pipenv/locked/python-version/${1:owner}/${2:repo}?logo=python&style=for-the-badge
+endsnippet
+
