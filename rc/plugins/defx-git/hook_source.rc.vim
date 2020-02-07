@@ -3,11 +3,11 @@
 
 call defx#custom#column('git', 'indicators', {
   \ 'Modified'  : '✹',
-  \ 'Staged'    : '✚',
+  \ 'Staged'    : '+',
   \ 'Untracked' : '✭',
   \ 'Renamed'   : '➜',
-  \ 'Unmerged'  : '═',
-  \ 'Ignored'   : '☒',
-  \ 'Deleted'   : '✖',
+  \ 'Unmerged'  : 'ǂ',
+  \ 'Ignored'   : '≠',
+  \ 'Deleted'   : '⨯',
   \ 'Unknown'   : '?'
   \ })
