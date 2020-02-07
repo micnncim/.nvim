@@ -80,10 +80,6 @@ repo  = 'cespare/vim-toml'
 on_ft = ['toml']
 
 [[plugins]]
-repo  = 'plasticboy/vim-markdown'
-on_ft = ['markdown', 'pandoc.markdown', 'rmd']
-
-[[plugins]]
 repo   = 'iamcco/markdown-preview.nvim'
 build  = 'sh -c "cd app & yarn install"'
 on_ft  = ['markdown', 'pandoc.markdown', 'rmd']
