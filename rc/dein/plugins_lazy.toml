@@ -42,6 +42,11 @@ on_event    = 'InsertEnter'
 hook_source = 'source $XDG_CONFIG_HOME/nvim/rc/plugins/deoplete/hook_source.rc.vim'
 
 [[plugins]]
+repo        = 'SirVer/ultisnips'
+on_event    = 'InsertEnter'
+hook_source = 'source $XDG_CONFIG_HOME/nvim/rc/plugins/ultisnips/hook_source.rc.vim' 
+
+[[plugins]]
 repo     = 'junegunn/vim-easy-align'
 on_map   = '<Plug>(EasyAlign)'
 hook_add = 'source $XDG_CONFIG_HOME/nvim/rc/plugins/vim-easy-align/hook_add.rc.vim'

@@ -23,10 +23,6 @@ repo = 'mengelbrecht/lightline-bufferline'
 # Edit
 
 [[plugins]]
-repo        = 'SirVer/ultisnips'
-hook_source = 'source $XDG_CONFIG_HOME/nvim/rc/plugins/ultisnips/hook_source.rc.vim' 
-
-[[plugins]]
 repo = 'tpope/vim-commentary'
 
 [[plugins]]
