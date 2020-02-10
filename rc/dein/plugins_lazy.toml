@@ -85,6 +85,10 @@ build  = 'sh -c "cd app & yarn install"'
 on_ft  = ['markdown', 'pandoc.markdown', 'rmd']
 on_cmd = ['MarkdownPreview', 'MarkdownPreviewStop']
 
+[[plugins]]
+repo  = 'bufbuild/vim-buf'
+on_ft = ['proto']
+
 # --------------------------------------------------------------------------------
 # Git
 
