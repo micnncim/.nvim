@@ -7,13 +7,14 @@
 nnoremap [LanguageClient] <Nop>
 nmap     <C-l>            [LanguageClient]
 
-nnoremap <silent> [LanguageClient]h :call LanguageClient_textDocument_hover()<CR>
-nnoremap <silent> [LanguageClient]d :call LanguageClient_textDocument_definition()<CR>
-nnoremap <silent> [LanguageClient]t :call LanguageClient_textDocument_typeDefinition()<CR>
-nnoremap <silent> [LanguageClient]r :call LanguageClient_textDocument_rename()<CR>
 nnoremap <silent> [LanguageClient]c :call LanguageClient_textDocument_completion()<CR>
+nnoremap <silent> [LanguageClient]d :call LanguageClient_textDocument_definition()<CR>
 nnoremap <silent> [LanguageClient]f :call LanguageClient_textDocument_formatting()<CR>
+nnoremap <silent> [LanguageClient]h :call LanguageClient_textDocument_hover()<CR>
 nnoremap <silent> [LanguageClient]i :call LanguageClient_textDocument_implementation()<CR>
+nnoremap <silent> [LanguageClient]r :call LanguageClient_textDocument_references()<CR>
+nnoremap <silent> [LanguageClient]n :call LanguageClient_textDocument_rename()<CR>
+nnoremap <silent> [LanguageClient]t :call LanguageClient_textDocument_typeDefinition()<CR>
 
 " --------------------------------------------------------------------------------
 " Config
