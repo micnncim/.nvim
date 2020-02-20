@@ -66,6 +66,9 @@ hook_add = 'source $XDG_CONFIG_HOME/nvim/rc/plugins/vim-gitgutter/hook_add.rc.vi
 [[plugins]]
 repo = 'rhysd/conflict-marker.vim'
 
+[[plugins]]
+repo = 'rickhowe/diffchar.vim'
+
 # --------------------------------------------------------------------------------
 # Utility
 
