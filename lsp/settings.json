@@ -7,7 +7,7 @@
         "deepCompletion": true,
         "fuzzyMatching": true,
         "caseSensitiveCompletion": false,
-        "completeUnimported": false,
+        "completeUnimported": true,
         "completionBudget": "200ms",
         "hoverKind": "FullDocumentation",
         "linkTarget": "",
