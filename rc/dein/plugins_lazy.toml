@@ -89,6 +89,10 @@ on_cmd = ['MarkdownPreview', 'MarkdownPreviewStop']
 repo  = 'bufbuild/vim-buf'
 on_ft = ['proto']
 
+[[plugins]]
+repo  = 'tsandall/vim-rego'
+on_ft = ['rego']
+
 # --------------------------------------------------------------------------------
 # Git
 
